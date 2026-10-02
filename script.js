@@ -1,0 +1,1 @@
+const reveal=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.08});document.querySelectorAll('.section,.experience-card,.skill,.project-grid,.edu').forEach(x=>{x.classList.add('reveal');reveal.observe(x)});
